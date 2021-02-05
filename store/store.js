@@ -79,8 +79,8 @@ export const actions = {
     const categories = await resp.json()
     commit('setCategories', categories)
   },
-  fetchCart({commit}) {
-    let cart = JSON.parse(localStorage.getItem('cart'))
+  async fetchCart({commit}) {
+    const cart = await JSON.parse(localStorage.getItem('cart'))
 
     if (cart) {
       commit('setCart', cart)
