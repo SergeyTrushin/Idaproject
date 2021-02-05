@@ -16,7 +16,7 @@
        </div>
      </div>
      <div class="ordered" v-if=isItOrdered>
-      <img src="~/assets/ok.png" alt="">
+      <img src="@/assets/ok.png" alt="">
       <h1>Заявка успешно отправлена</h1>
       <p>Вскоре наш менеджер свяжется с Вами</p>
     </div>
